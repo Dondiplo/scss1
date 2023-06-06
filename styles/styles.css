@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,200;0,400;0,500;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Sofia+Sans+Semi+Condensed:ital,wght@0,200;0,400;0,500;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  color: #711def;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+  font-size: 16px;
+  position: relative;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+header .menu {
+  display: flex;
+}
+header .menu button {
+  display: none;
+}
+header .menu_list {
+  display: flex;
+  list-style: none;
+}
+header .menu_list li {
+  display: inline-block;
+  margin-left: 32px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: color 0.3sec;
+}
+header .menu_list li:hover {
+  color: #ff5360;
+}
+header .menu_list .active {
+  color: #ff5360;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.main_right img {
+  width: 100%;
+}
+
+.left {
+  max-width: 45%;
+  padding: 40px 64px;
+}
+
+.right {
+  padding: 40px 48px;
+}
+
+.left_title {
+  color: #ff5360;
+  font-size: 3.2em;
+  width: 50%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 48px;
+}
+.left_msg {
+  color: #9fb5cc;
+  font-size: 1.1em;
+  letter-spacing: 0.7px;
+  line-height: 32px;
+  margin-bottom: 48px;
+}
+.left_cta {
+  border: none;
+  outline: none;
+  background-color: #711def;
+  color: #fff;
+  padding: 10px 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: opacity 0.9;
+}
+.left_cta:hover {
+  opacity: 0.7;
+}/*# sourceMappingURL=styles.css.map */
